@@ -27,6 +27,9 @@ pipeline {
             }
         }
         stage('Cool demo stuff') {
+            agent{
+                any
+            }
             steps {
                 sh 'echo "hello"'
             }
