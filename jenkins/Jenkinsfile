@@ -27,7 +27,7 @@ pipeline {
             }
         }
         stage('Cool demo stuff') {
-            agent{
+            agent {
                 any
             }
             steps {
