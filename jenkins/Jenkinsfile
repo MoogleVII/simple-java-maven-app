@@ -29,7 +29,7 @@ pipeline {
         stage('Cool demo stuff') {
             agent {
                 docker {
-                    image 'docker/whalesay'
+                    image 'docker.io/docker/whalesay'
                 }
             }
             steps {
