@@ -27,7 +27,11 @@ pipeline {
             }
         }
         stage('Cool demo stuff') {
-            agent any
+            agent {
+                docker {
+                    image 'docker/whalesay'
+                }
+            }
             steps {
                 sh 'echo "hello"'
             }
