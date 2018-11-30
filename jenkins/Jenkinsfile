@@ -42,7 +42,7 @@ pipeline {
         stage('Cool demo stuff') {
             agent {
                 docker {
-                    image 'maven:3-alpine'
+                    image 'docker/whalesay'
                     args '-v /root/.m2:/root/.m2'
                 }
             }
