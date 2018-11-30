@@ -47,7 +47,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'cowsay "hello"'
+                sh 'cowsay "Hello CPEN 422"'
             }
         }
     }
