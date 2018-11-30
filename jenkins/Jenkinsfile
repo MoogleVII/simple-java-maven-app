@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Cool demo stuff') {
             steps {
-                sh 'ubuntu bash -c "apt-get -y install nginx" '
+                sh 'ubuntu bash -c "apt-get -y install docker" '
                 sh 'echo "hello"'
             }
         }
